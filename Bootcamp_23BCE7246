@@ -1,0 +1,13 @@
+def chatbot(message):
+    if "hi" in message or "hey" in message or "hello" in message:
+        print("Hello! How can I assist you today?")
+    elif "what is your name" in message:
+        print ("My name is ChatBot. Nice to meet you!")
+    else:
+        print("I'm sorry, I didn't quite catch that. Can you please rephrase?")
+
+# Start the conversation
+while True:
+    user_input = input("User: ")
+    response = chatbot(user_input)
+    print("ChatBot:", response)
